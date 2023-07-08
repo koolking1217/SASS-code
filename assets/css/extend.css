@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap") html;
+body {
+  background-color: purple;
+  font-family: Roboto;
+}
+
+.welcome {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 15px 10px 20px;
+  margin: 20px;
+}
+
+.welcome h2 {
+  font-size: 20px;
+}
+
+.welcome p {
+  margin-top: 10px;
+  color: rgba(125, 125, 125, 0.8);
+}
+
+.welcome .btn {
+  margin-top: 10px;
+  background-color: rgb(220, 0, 0);
+  padding: 2.5px 5px 2.5px 5px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* @extend rule*/
+.alert, .alert-error, .alert-success {
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.alert-success {
+  background-color: lightgreen;
+  border: 1px solid greenyellow;
+}
+.alert-error {
+  background-color: lightcoral;
+  border: 1px solid rgb(200, 54, 63);
+}/*# sourceMappingURL=extend.css.map */

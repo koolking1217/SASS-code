@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+/*  *{
+    margin: 0px;
+    padding: 0px;
+}  */
+/*******CSS variables********/
+:root {
+  --text-color: purple;
+}
+
+html body {
+  background-color: var(--text-color);
+  font-family: "Belanosima", sans-serif;
+}
+
+.welcome {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 15px 10px 20px;
+  margin: 20px;
+}
+.welcome .welcome-title {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.welcome .welcome-description {
+  margin-top: 10px;
+  /** override variable for this block -- LOCAL VARIABLE  **/
+  color: green;
+}
+
+.SASS {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 15px 10px 20px;
+  margin: 20px;
+}
+.SASS-btn {
+  border: none;
+  color: #fff;
+  background-color: purple;
+  border-radius: 25px;
+  padding: 10px 15px 10px 20px;
+  margin: 20px;
+}
+.SASS-heading {
+  font-family: "Belanosima", sans-serif;
+}
+.SASS-p {
+  font-family: "Roboto", sans-serif;
+  color: black; /*See the comment in .btn class selector*/
+}/*# sourceMappingURL=SASS nesting.css.map */

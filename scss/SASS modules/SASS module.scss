@@ -1,0 +1,24 @@
+@use '../import and partials/_colors' ;
+
+@use '../import and partials/_fonts' as f;
+
+@use './forward';
+
+body{
+    background-color: colors.$background-color-2;
+    font-family: f.$font-family-2;
+    font-weight: forward.$font-weight;
+}
+
+
+
+/*App color: _colors.background-color; */
+/*color: #{colors.$background-color-2}; */
+/* font: #{f.$font-family-2};  */
+
+/*        you need to take care of the pathway to the file to be linked with the document you want.  
+            take a note of the namespace/file pathway of the file to be linked.
+        if variable is not declared the use the following syntax
+            property: filename.$variable;
+
+                                                                                                           */

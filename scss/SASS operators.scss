@@ -1,0 +1,6 @@
+/* Equality operators  */
+
+$first-number: 1;
+$second-number: 1;
+
+@debug "Result: #{$first-number == $second-number}";

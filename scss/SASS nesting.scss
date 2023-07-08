@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+/*  *{
+    margin: 0px;
+    padding: 0px;
+}  */
+/*******CSS variables********/
+:root{
+    --text-color: purple;
+}
+//SASS variables -- GLOBAL VARIABLES... first global value to be more specific
+$font-family-1: 'Belanosima', sans-serif;
+$font-family-2: 'Roboto', sans-serif;
+$background-color: black;
+html body {
+    background-color: var(--text-color);
+    font-family: $font-family-1;
+}
+.welcome{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px 10px 20px;
+    margin: 20px;
+
+.welcome-title{
+    font-size: 20px;
+    font-family: $font-family-2;
+}
+.welcome-description{
+    margin-top: 10px;
+    $background-color: green; /** override variable for this block -- LOCAL VARIABLE  **/
+    color: $background-color; 
+}
+}
+.SASS{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px 10px 20px;
+    margin: 20px;
+&-btn{ 
+    border: none;
+    color: #fff;
+    background-color: purple;
+   border-radius: 25px;
+   padding: 10px 15px 10px 20px;
+   margin: 20px;
+} 
+&-heading{
+    font-family: $font-family-1;
+}
+&-p{
+    font-family: $font-family-2;
+    color: $background-color; /*See the comment in .btn class selector*/
+}
+}

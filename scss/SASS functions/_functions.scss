@@ -1,0 +1,5 @@
+@use"./_theme colors"
+
+@function brand-colors ($variant){
+@return  map-get($theme-colors, $variant)
+}

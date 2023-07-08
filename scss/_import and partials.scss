@@ -1,0 +1,13 @@
+// import is used to import or link another SASS file.
+/*         SYNTAX for import is 
+        @import " link/pathway to the file to be linked ";
+ 
+        partials are created when the SASS files need not to be compiled.
+        partial files will not be compiled to CSS.
+        partial files/folders are created by inserting _ before the name of the file.
+
+        for ex: look at the name of this file. There is no CSS file compiled for this SASS file. 
+
+        for ex: SASS files of all pages of the webpages need not to be compiled/transpiled into CSS.
+        
+        they are linked with the main SASS file and are finally compiled/transpiled                      */

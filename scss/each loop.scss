@@ -1,0 +1,94 @@
+@use "sass:math";
+@use "sass:string";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+/*  *{
+    margin: 0px;
+    padding: 0px;
+}  */
+html ,body {
+    background-color: purple;
+    font-family: Roboto;
+}
+.welcome-card{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px 10px 20px;
+    margin: 20px;
+}
+.welcome h2{
+    font-size: 20px;
+}
+.welcome p{
+    margin-top: 10px;
+    color: rgba(125, 125, 125, .8);
+}.welcome .btn{
+    margin-top: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    padding: 2.5px 5px 2.5px 5px;
+    border: none;
+    color: #fff;
+   border-radius: 5px;
+} 
+#ifelse{
+    color: blueviolet;
+}
+
+/* SASS if-else conditions   */     /*  First example  */
+
+$text-limit: 4;
+
+#ifelse{
+    @if $text-limit <= 4{
+        color: red;
+    }
+    @else if $text-limit > 4 and $text-limit <= 8{
+        color: blue;
+    }
+    @else {
+        color: green;
+    }
+}         
+
+              /* Second example */
+@mixin avatar ($size, $circle: false){
+    width: $size;
+    height: $size;
+    @if $circle {
+        border-radius: math.div($size, 2);
+    }
+}
+
+.square-av{
+    @include avatar(100px);
+}
+
+.circle-av{
+    @include avatar(100px, $circle: true);
+}
+
+/* Each loop   example */
+/* to use string slice(str-slice) as used in line 83 and 86 you need to import sass string module(inbuilt).
+ see line 2 */
+$spacing: 1,2,3,4,5,6;
+$directions: top,right,bottom,left;
+ /* The value of the first variable(increment and direction) can be anything. it's just the convention*/
+@each $increment in $spacing{
+    .m-#{$increment}{
+        margin: #{$increment}rem;
+    }
+    .p-#{$increment}{
+        padding: #{$increment}rem;
+    }
+@each $direction in $directions{ 
+    .m#{str-slice($direction, 0, 1)}-#{$increment}{
+        margin-#{$direction}: #{$increment}rem !important;
+    }
+    .p#{str-slice($direction, 0, 1)}-#{$increment}{
+        padding-#{$direction}: #{$increment}rem !important;
+    }
+}
+}
+/* we wrote 118 lines of code(for only margin without considering padding ) in css by only writing
+ 15 lines of SASS code. This is the power of SASS.  */
+ /* we wrote 240 lines of code(considering padding ) in css by only writing 20 lines of SASS code.
+  This is the power of SASS.  */

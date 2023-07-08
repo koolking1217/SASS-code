@@ -1,0 +1,56 @@
+@use './functions' as func;
+@use './theme colors' as theme;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.header__menu{
+    display: flex;
+    list-style-type: none;
+}
+.header__list{
+    margin-right: 20px;
+    font-size: 18px;
+}
+.header .active > a{
+    background-color: map-get($theme-colors, "primary");
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+
+/*end navigation*/
+  
+html ,body {
+    background-color: func.brand-colors("primary");
+    font-family: Arial, Helvetica, sans-serif;
+}
+.welcome{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 15px 10px 20px;
+    margin: 20px;
+}
+.welcome h2{
+    font-size: 20px;
+}
+.welcome p{
+    margin-top: 10px;
+    color: rgba(125, 125, 125, .8);
+}.welcome .btn{
+    margin-top: 10px;
+    background-color:  map-get($theme-colors, "primary");
+    padding: 2.5px 5px 2.5px 5px;
+    border: none;
+    color: white;
+   border-radius: 5px;
+}

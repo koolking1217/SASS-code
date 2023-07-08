@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+/*  *{
+    margin: 0px;
+    padding: 0px;
+}  */
+/*******CSS variables********/
+:root {
+  --text-color: purple;
+}
+
+/*The syntax is hashtag{$variable}*/
+/*     Font family: Belanosima, sans-serif;   */
+/*This can be used to merge images and it is used in mixins and so on.*/
+html body {
+  background-color: var(--text-color);
+  font-family: Belanosima, sans-serif;
+}
+
+.welcome {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 15px 10px 20px;
+  margin: 20px;
+}
+
+.welcome h2 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.welcome p {
+  margin-top: 10px;
+  /** override variable for this block -- LOCAL VARIABLE  **/
+  color: green;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  /*This is global tag. hereafter the variable will take purple colour.
+  Purple is the second global value for the variable.
+  look at the result of the code in line 51(.heading-3 + p).  
+  */
+  background-color: purple;
+  padding: 2.5px 5px 2.5px 5px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.heading-3 {
+  font-family: "Belanosima", sans-serif;
+}
+
+.heading-3 + p {
+  font-family: "Roboto", sans-serif;
+  color: purple; /*See the comment in .btn class selector*/
+}/*# sourceMappingURL=interpolation.css.map */

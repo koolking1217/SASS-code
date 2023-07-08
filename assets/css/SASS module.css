@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+body {
+  background-color: purple;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/*App color: _colors.background-color; */
+/*color: purple; */
+/* font: Roboto, sans-serif;  */
+/*        you need to take care of the pathway to the file to be linked with the document you want.  
+            take a note of the namespace/file pathway of the file to be linked.
+        if variable is not declared the use the following syntax
+            property: filename.$variable;
+
+                                                                                                           *//*# sourceMappingURL=SASS module.css.map */
